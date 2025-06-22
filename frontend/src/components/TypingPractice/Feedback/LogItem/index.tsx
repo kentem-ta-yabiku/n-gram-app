@@ -1,30 +1,28 @@
-import IconNO from '../IconNO'
-import IconOK from '../IconOK'
 import type { Log } from '../models/Log'
 import styles from './index.module.scss'
 
 type Props = {
+  key: string,
   log: Log
   opacity: number
 }
 
 const MAX_LENGTH = 40
 
-const LogItem = ({log, opacity}: Props) => {
+const LogItem = ({key, log, opacity}: Props) => {
   return (
-    <div className={styles['log-box']} key={log.sentence}>
-      {log.isCorrect ? <IconOK/> : <IconNO/>}
-      <p
-        className={styles['log']}
-        style={{
-          opacity: opacity.toString(),
-        }}
-        >
-        {log.sentence.length > MAX_LENGTH 
-          ? `${log.sentence.slice(0, MAX_LENGTH)}...`
-          : log.sentence}
-      </p>
-    </div>
+    <p
+      key={key}
+      className={styles['log']}
+      style={{
+        opacity: opacity.toString(),
+        color: log.isCorrect ? '#A5D6A7' : '#EF9A9A',
+      }}
+      >
+      {log.sentence.length > MAX_LENGTH 
+        ? `${log.sentence.slice(0, MAX_LENGTH)}...`
+        : log.sentence}
+    </p>
   )
 }
 

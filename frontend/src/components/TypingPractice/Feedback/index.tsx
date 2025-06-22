@@ -22,7 +22,7 @@ const Feedback = ({ logs }: Props) => {
     <div className={styles['feedback-container']}>
       <h3 className={styles['logs-title']}>履歴</h3>
       {slicedLogs.map((log, index) => (
-        <LogItem log={log} opacity={1 - (index / slicedLogs.length)} />
+        <LogItem key={log.sentence} log={log} opacity={1 - (index / slicedLogs.length)} />
         ))}
     </div>
   )
