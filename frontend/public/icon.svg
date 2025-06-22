@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- キー形：薄グレー -->
+  <rect x="30" y="50" width="68" height="40" rx="12" ry="12" fill="#E0E0E0" stroke="#5B3E96" stroke-width="3" />
+  <!-- 文字（？）：紫 -->
+  <text x="64" y="82" text-anchor="middle" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="28" fill="#5B3E96" pointer-events="none">?</text>
+  <!-- 指の形（線）：濃いグレー -->
+  <path d="M58 48 Q62 40 68 45 Q70 50 65 55" stroke="#333333" stroke-width="3" fill="none" stroke-linecap="round" />
+</svg>

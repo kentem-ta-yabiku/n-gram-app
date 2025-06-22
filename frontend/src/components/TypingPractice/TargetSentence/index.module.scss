@@ -1,4 +1,26 @@
+.target-sentence-container {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Courier New', monospace;
+}
+
 .question {
-  font-size: 24px;
+  margin-bottom: 0;
   text-align: center;
+}
+
+.romaji {
+  margin: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center; 
 }

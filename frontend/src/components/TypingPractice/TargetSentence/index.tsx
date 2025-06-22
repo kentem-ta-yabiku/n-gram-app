@@ -1,12 +1,16 @@
+import type { Question } from "../models/Question";
 import styles from "./index.module.scss";
 
 type Props = {
-  questionText: string;
+  question: Question;
 };
 
-const TargetSentence = ({ questionText }: Props) => {
+const TargetSentence = ({ question }: Props) => {
   return (
-    <p className={styles["question"]}>{questionText.toLocaleUpperCase()}</p>
+    <div className={styles["target-sentence-container"]}>
+      <p className={styles["question"]}>{question.sentence.toLocaleUpperCase()}</p>
+      <p className={styles['romaji']}>{question.romaji}</p>
+    </div>
   );
 };
 

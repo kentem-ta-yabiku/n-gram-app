@@ -1,0 +1,31 @@
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.logs-title {
+  font-size: 1.5rem;
+  color: #7877c6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.logs-empty {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.log-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.log {
+  margin: 4px 0;
+}
