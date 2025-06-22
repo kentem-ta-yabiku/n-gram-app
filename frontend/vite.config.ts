@@ -7,5 +7,6 @@ export default defineConfig({
   plugins: [react(), wasm()],
   build: {
     target: 'esnext',
+    outDir: "../docs",
   },
 })
